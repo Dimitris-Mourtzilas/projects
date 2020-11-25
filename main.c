@@ -3,8 +3,8 @@ int main(int argc,char *argv[]){
 
 FILE *fp;
 ll *head=NULL;
-int data,size,choice;
-char *fileName,count=0;
+int data,size,choice,count=0;
+char *fileName
 while(1){
 printf("Menu");
 printf("Insert data to list\nPrint list to screen\nPrint list to a text file\nExit\nChoose:");
