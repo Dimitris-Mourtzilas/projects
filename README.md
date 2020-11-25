@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>
-<b>Linked List in C</b>
+Linked List in C
 </title>
 </head>
 
