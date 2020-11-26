@@ -24,6 +24,14 @@ The program gives the user a variety of choices like:
 <li>Sorting the list</li>
 <li>Copying list's elements to another list</li>
 </ul>
+  <h1>Execution</h1>
+  <p>Below are the steps for the execution of the program</p>
+  <ol>
+    <li>Unzip the file that you downloaded</ul>
+  <li>Open terminal (for Linux) or Command Prompt (for Windows). Note: Make Sure that you have the latest version of gcc compiler downloaded on your pc!.</li>
+  <li>Type the following command</br>gcc -o -Wall linked_list linked_list.c</li>
+  <li>Finally type:</br>./linked_list (for Linux) <b>or</b> linked_list.exe (for Windows)</li>
+  </ol>
 <h3>Copyright @ 2020 - Dimitrios Mourtzilas</h2>
 </body>
 </html>
