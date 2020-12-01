@@ -60,3 +60,54 @@ int UnsupportedFileName(char **fileName){
 
 	return strcmp(*fileName,"")==0;
 }
+
+void copyList(ll*head,ll**shead){
+if(head==NULL)return;
+while(head){
+ll*newnode=(ll*)malloc(sizeof(ll));
+newnode->data=head->data;
+newnode->next_node=*shead;
+*shead=newnode;
+head=head->next;
+}
+}
+
+void sortList(ll **head){
+if(*head==NULL)return;
+ll*temp=*head;
+int temp_data;
+while((*head)->next_node){
+temp=temp->next_node;
+}
+while(*head<temp){
+if((*head)->data>temp->data){
+temp_data=(*head)->data;
+(*head)->data=temp->data;
+temp->data=temp_data;
+}
+*head=(*head)->next_node;
+}
+}
+
+bool findElement(ll*head,int key){
+if(listIsEmpty(head))return false;
+while(head){
+if(head->data==key)return true;
+head=head->next_node;
+}
+return false;
+}
+
+void deleteList(ll*head){
+if(listIsEmpty(head))return;
+ll*temp;
+while(head){
+temp=head;
+head=head->next_node;
+free(temp);
+}
+
+printf("List deleted");
+}
+
+
